@@ -1,0 +1,43 @@
+#wrap{
+    #course-wrap {
+        width: 100%;
+        // overflow: hidden; 也没有用 子元素设置定位父元素会高度塌陷  
+        //需要用js给父元素设置高度
+        position: relative;
+        .list {
+           list-style: none;
+           overflow: hidden;
+        //    position: absolute;
+        //    left: 0;
+            //动画
+            // transition: 0.5s left;
+           li{
+               float: left;
+               img{
+                   display: block;
+                   width: 100%;
+               }
+           }
+        }
+        .course-point{
+            position: absolute;
+            bottom:0;
+            width: 100%;
+            text-align: center;
+            z-index: 999;
+            span{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: white;
+                margin-right: 6px;
+                &.active{
+                    background-color: pink;
+                }
+            }
+            
+        }
+    }
+
+}

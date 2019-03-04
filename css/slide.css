@@ -1,0 +1,33 @@
+#wrap #course-wrap {
+  width: 100%;
+  position: relative;
+}
+#wrap #course-wrap .list {
+  list-style: none;
+  overflow: hidden;
+}
+#wrap #course-wrap .list li {
+  float: left;
+}
+#wrap #course-wrap .list li img {
+  display: block;
+  width: 100%;
+}
+#wrap #course-wrap .course-point {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+#wrap #course-wrap .course-point span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 6px;
+}
+#wrap #course-wrap .course-point span.active {
+  background-color: pink;
+}

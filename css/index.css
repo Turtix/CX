@@ -1,0 +1,407 @@
+.clearfix,
+#wrap > .head .head-bottom form,
+#wrap > .head .mask > .list,
+#wrap > .content div .nav > .list,
+#wrap > .content div .tap-wrap > .tap-head,
+#wrap > .content div .tap-wrap > .tap-content,
+#wrap > .content div .tap-wrap > .tap-content > ul.list,
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom {
+  *zoom: 1;
+}
+.clearfix:after,
+#wrap > .head .head-bottom form:after,
+#wrap > .head .mask > .list:after,
+#wrap > .content div .nav > .list:after,
+#wrap > .content div .tap-wrap > .tap-head:after,
+#wrap > .content div .tap-wrap > .tap-content:after,
+#wrap > .content div .tap-wrap > .tap-content > ul.list:after,
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap {
+  background-color: #eee;
+  font-size: 0;
+}
+#wrap > .head {
+  background-color: #232323;
+  position: relative;
+  z-index: 10;
+}
+#wrap > .head .head-top {
+  height: 2rem;
+  overflow: hidden;
+}
+#wrap > .head .head-top .logo {
+  float: left;
+  margin: 0.38518519rem 0.25185185rem 0.31111111rem;
+  width: 3.55555556rem;
+  height: 1.3037037rem;
+}
+#wrap > .head .head-top .logo img {
+  width: 100%;
+}
+#wrap > .head .head-top .btn {
+  float: left;
+  width: 1.91111111rem;
+  height: 2rem;
+  background: url("../img/menuBtn.png") no-repeat;
+  background-size: 1.21481481rem 3.45185185rem;
+  background-position: center 0.23703704rem;
+}
+#wrap > .head .head-top .btn.active {
+  background-position: center -1.77777778rem;
+}
+#wrap > .head .head-top .btns {
+  float: right;
+  margin-top: 0.31111111rem;
+}
+#wrap > .head .head-top .btns > a {
+  float: left;
+  width: 1.64444444rem;
+  height: 1.15555556rem;
+  line-height: 1.15555556rem;
+  background-color: #690;
+  color: #ccc;
+  margin-right: 0.22222222rem;
+  font-size: 0.62222222rem;
+  font-weight: bold;
+  border-radius: 0.11851852rem;
+  text-align: center;
+}
+#wrap > .head .head-top .btns > a:nth-child(1) {
+  width: 1.92592593rem;
+  height: 1.3037037rem;
+  line-height: 1.3037037rem;
+  margin-top: 0.04444444rem;
+  margin-right: 0.44444444rem;
+  color: #fff;
+  border-radius: 0.14814815rem;
+}
+#wrap > .head .head-bottom {
+  height: 1.52592593rem;
+  padding: 0.23703704rem;
+  overflow: hidden;
+}
+#wrap > .head .head-bottom form > input {
+  box-sizing: border-box;
+  font-size: 0.60740741rem;
+  color: #333;
+}
+#wrap > .head .head-bottom form > input[type="text"] {
+  float: left;
+  width: 12.28148148rem;
+  height: 1.52592593rem;
+  background-color: #999;
+  color: #333;
+  padding: 0.07407407rem 0.14814815rem;
+  border-radius: 0.22222222rem 0 0 0.22222222rem;
+  border: 1px solid #5a5a5a;
+}
+#wrap > .head .head-bottom form > input[type="text"]::-webkit-input-placeholder {
+  color: #333;
+}
+#wrap > .head .head-bottom form > input[type="text"]:focus {
+  background-color: #fff;
+}
+#wrap > .head .head-bottom form > input[type="button"] {
+  float: right;
+  width: 3.00740741rem;
+  height: 1.52592593rem;
+  color: #fff;
+  font-size: 0.75555556rem;
+  font-weight: 800;
+  background-color: #414040;
+  border-radius: 0 0.22222222rem 0.22222222rem 0;
+}
+#wrap > .head .mask {
+  display: none;
+  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  padding: 0.14814815rem 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+}
+#wrap > .head .mask:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #6a6a6a;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .head .mask:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .head .mask:after {
+    transform: scaleY(0.33333333);
+  }
+}
+#wrap > .head .mask > .list li {
+  float: left;
+  width: 22.5%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+#wrap > .head .mask > .list li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 0.8rem;
+}
+#wrap > .head .mask.active {
+  display: block;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ef4eek');
+  src: url('../fonts/icomoon.eot?ef4eek#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ef4eek') format('truetype'), url('../fonts/icomoon.woff?ef4eek') format('woff'), url('../fonts/icomoon.svg?ef4eek#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+#wrap {
+  position: relative;
+}
+#wrap > .content {
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#wrap > .content div .nav {
+  position: relative;
+  box-sizing: border-box;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem 0;
+  background-color: #EEEEEE;
+}
+#wrap > .content div .nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .content div .nav::after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .content div .nav::after {
+    transform: scaleY(0.33333333);
+  }
+}
+#wrap > .content div .nav > .list {
+  white-space: nowrap;
+  float: left;
+}
+#wrap > .content div .nav > .list li {
+  display: inline-block;
+  color: #020202;
+  height: 1.91111111rem;
+  line-height: 1.91111111rem;
+  padding: 0 0.56296296rem;
+}
+#wrap > .content div .nav > .list li a {
+  color: #020202;
+  font-size: 0.97777778rem;
+}
+#wrap > .content div .nav > .list li.active {
+  background-color: #690;
+}
+#wrap > .content div .nav > .list li.active > a {
+  color: #fff;
+}
+#wrap > .content div .tap-wrap {
+  width: 15.4962963rem;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#wrap > .content div .tap-wrap > .tap-head {
+  height: 2rem;
+  line-height: 2rem;
+}
+#wrap > .content div .tap-wrap > .tap-head > h2 {
+  float: left;
+  font-size: 0.97777778rem;
+}
+#wrap > .content div .tap-wrap > .tap-head > span {
+  float: right;
+  font-size: 0.60740741rem;
+}
+#wrap > .content div .tap-wrap > .tap-head > span > i {
+  margin-left: 0.2962963rem;
+}
+#wrap > .content div .tap-wrap > .tap-nav {
+  position: relative;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+}
+#wrap > .content div .tap-wrap > .tap-nav > a {
+  float: left;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+  font-size: 0.65185185rem;
+  text-align: center;
+  margin-right: 0.22222222rem;
+  color: #6b6b6b;
+}
+#wrap > .content div .tap-wrap > .tap-nav > .smallG {
+  position: absolute;
+  left: 0;
+  bottom: 0.14814815rem;
+  width: 1.3037037rem;
+  height: 0.13333333rem;
+  background: #6f900d;
+  transition: 1s transform,1s width;
+}
+#wrap > .content div .tap-wrap > .tap-content {
+  width: 300%;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul {
+  float: left;
+  width: 33.3333333%;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li {
+  float: left;
+  box-sizing: border-box;
+  width: 7.4962963rem;
+  margin: 0.11851852rem;
+  padding: 5 67.5rem;
+  font-size: 0.59259259rem;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .top > a {
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .top > a img {
+  display: block;
+  width: 100%;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .top > a span {
+  color: dimgray;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .play {
+  float: left;
+  margin-right: 0.44444444rem;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .play > i {
+  display: inline-block;
+  background: url("../img/ice.png") no-repeat 0 0;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  vertical-align: middle;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .play > span {
+  vertical-align: middle;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .say {
+  float: left;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .say > i {
+  display: inline-block;
+  background: url("../img/ice.png") no-repeat 0 -0.81481481rem;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  vertical-align: middle;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.list > li > .bottom > .say > span {
+  vertical-align: middle;
+}
+#wrap > .content div .tap-wrap > .tap-content > ul.loading {
+  background: url("../img/loading.gif") no-repeat;
+  background-position: center ;
+  opacity: 0;
+}
+#wrap #course-wrap {
+  width: 100%;
+  position: relative;
+}
+#wrap #course-wrap .list {
+  list-style: none;
+  overflow: hidden;
+}
+#wrap #course-wrap .list li {
+  float: left;
+}
+#wrap #course-wrap .list li img {
+  display: block;
+  width: 100%;
+}
+#wrap #course-wrap .course-point {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+#wrap #course-wrap .course-point span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 6px;
+}
+#wrap #course-wrap .course-point span.active {
+  background-color: pink;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body #wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body #wrap .bar {
+  width: 4px;
+  height: 30px;
+  background-color: pink;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: 1s opacity;
+  z-index: 99;
+}
